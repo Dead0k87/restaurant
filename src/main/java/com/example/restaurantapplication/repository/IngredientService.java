@@ -1,4 +1,4 @@
-package com.example.pizzaapplication.repository;
+package com.example.restaurantapplication.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

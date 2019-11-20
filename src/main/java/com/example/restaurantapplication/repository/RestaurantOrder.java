@@ -1,4 +1,4 @@
-package com.example.pizzaapplication.repository;
+package com.example.restaurantapplication.repository;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -25,7 +25,7 @@ public class RestaurantOrder {
     @Size(min = 10, message = "not enough components")
     private String components;
 
-    private BigDecimal price;
+    private double price;
     private String notes;
     private String waiterName;
 
@@ -86,11 +86,11 @@ public class RestaurantOrder {
         this.components = components;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

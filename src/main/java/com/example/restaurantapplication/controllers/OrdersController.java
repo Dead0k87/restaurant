@@ -1,8 +1,10 @@
-package com.example.pizzaapplication.controllers;
+package com.example.restaurantapplication.controllers;
 
-import com.example.pizzaapplication.repository.OrderRepository;
-import com.example.pizzaapplication.repository.RestaurantOrder;
+import com.example.restaurantapplication.repository.OrderRepository;
+import com.example.restaurantapplication.repository.RestaurantOrder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -22,11 +24,26 @@ public class OrdersController {
     @Autowired
     private OrderRepository repository;
 
+    @GetMapping("/summary")
+    public String showHomePage(ModelMap model) {
+
+        long count = repository.findByWaiterName(getLoginID()).size();
+        double revenue = repository.findByWaiterName(getLoginID())
+                .stream().mapToDouble(ord -> ord.getPrice()).sum();
+        model.put("totalOrders", count);
+
+
+        model.put("totalRevenue", revenue);
+        return "summary_page";
+    }
+
     @GetMapping("/orders_list")
     public String showOrdersListPerWaiter(ModelMap model) {
-        String login = getLoginID(model);
+        String loginID = getLoginID();
+         model.put("login", loginID);
 
-        List<RestaurantOrder> allOrders = repository.findByWaiterName(login);
+
+        List<RestaurantOrder> allOrders = repository.findByWaiterName(loginID);
         model.put("orders_list", allOrders);
 
         return "orders_list";
@@ -35,7 +52,7 @@ public class OrdersController {
     //ADD ORDER
     @GetMapping("/add_order")
     public String showNewOrderPage(ModelMap model) {
-        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(model), "default components+");
+        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(), "default components+");
         model.addAttribute("restaurantOrder", restaurantOrder);
         return "add-or-update-order";
     }
@@ -45,7 +62,7 @@ public class OrdersController {
         if (result.hasErrors()) {
             return "add-or-update-order";
         }
-        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(model), pizza.getComponents());
+        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(), pizza.getComponents());
         newPizza.setNotes(pizza.getNotes());
 
         repository.save(newPizza);
@@ -65,8 +82,8 @@ public class OrdersController {
         if (bindingResult.hasErrors()) {
             return "add-or-update-order";
         }
-        restaurantOrder.setWaiterName(getLoginID(model));
-
+        restaurantOrder.setWaiterName(getLoginID());
+        restaurantOrder.setDate(LocalDateTime.now());
         repository.save(restaurantOrder);
         return "redirect:/orders_list";
     }
@@ -74,12 +91,18 @@ public class OrdersController {
     //DELETE ORDER
     @GetMapping("/delete_order")
     public String deleteOrder(@RequestParam long id) {
+
         repository.deleteById(id);
         return "redirect:/orders_list";
     }
 
 
-    private String getLoginID(ModelMap model) {
-        return (String) model.get("login");
+    private String getLoginID() {
+        Object authentication =
+                SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        if (authentication instanceof UserDetails) {
+            return ((UserDetails) authentication).getUsername();
+        }
+        return authentication.toString();
     }
 }

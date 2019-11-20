@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="558b685a-f576-452d-a679-23c6730d35e1" name="Default Changelist" comment="" />
+    <list default="true" id="558b685a-f576-452d-a679-23c6730d35e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/SummaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/err.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/PizzaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/IngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/IngredientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/IngredientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/RestaurantOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/CarManufacturerDealerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/RestaurantApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/controllers/StartControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/PizzaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/controllers/OrdersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/repository/Ingredient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/repository/IngredientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/repository/IngredientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/repository/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pizzaapplication/repository/RestaurantOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/pizzaapplication/CarManufacturerDealerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/pizzaapplication/controllers/StartControllerTest.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +46,83 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/OrdersController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orders_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/ErrorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/SummaryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LogoutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/summary_page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,12 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/carmanufacturerdealerapplication/CarManufacturerDealerApplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/carmanufacturerdealerapplication/controllers/StartControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/carmanufacturerdealerapplication/controllers/StartController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/carmanufacturerdealerapplication/repository/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/carmanufacturerdealerapplication/repository/CarRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/carmanufacturerdealerapplication/repository/House.java" />
@@ -76,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/PizzaController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orderslist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/add_order.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/order.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/Pizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/Order.java" />
@@ -87,9 +183,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/CarManufacturerDealerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/RestraurantApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/RestaurantApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/OrdersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LogoutController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/err.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/SummaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/ErrorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" />
       </list>
     </option>
   </component>
@@ -100,7 +211,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -145,7 +256,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pizzaapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
@@ -153,7 +264,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pizzaapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -162,7 +273,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pizzaapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,7 +281,64 @@
               <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,7 +353,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574276028432" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574286833612" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -204,10 +372,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.pizzaapplication.controllers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\webapp\WEB-INF\jsp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.restaurantapplication.controllers" />
       <recent name="com.example.pizzaapplication.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\car-manufacturer-dealer-application\src\main\webapp\WEB-INF\jsp\common" />
       <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\car-manufacturer-dealer-application\src\main\webapp\WEB-INF\jsp" />
     </key>
@@ -230,7 +403,7 @@
   <component name="RunManager">
     <configuration name="RestaurantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="restaurant-application" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pizzaapplication.PizzaApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.restaurantapplication.PizzaApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,15 +425,16 @@
       <workItem from="1574188850234" duration="11288000" />
       <workItem from="1574269349842" duration="5953000" />
       <workItem from="1574276124483" duration="623000" />
-      <workItem from="1574279507734" duration="394000" />
+      <workItem from="1574279507734" duration="6880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45191000" />
+    <option name="totallyTimeSpent" value="51677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29959515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -302,8 +476,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/controllers/StartControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/PizzaApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.1.RELEASE/spring-data-jpa-2.2.1.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -312,10 +485,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/Ingredient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/IngredientService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/IngredientRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/OrderRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/Ingredient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/IngredientService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/IngredientRepository.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -346,24 +518,138 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jspf" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jspf" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_page.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orders_list.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/add-or-update-order.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/repository/RestaurantOrder.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/pizzaapplication/controllers/StartControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/pizzaapplication/controllers/OrdersController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/RestaurantApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="3638" column="18" selection-start-line="3638" selection-start-column="18" selection-end-line="3638" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+          <folding>
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/err.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/summary_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/err.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LogoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/ErrorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/SummaryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orders_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
     </entry>

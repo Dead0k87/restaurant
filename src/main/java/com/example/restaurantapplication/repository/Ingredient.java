@@ -1,4 +1,4 @@
-package com.example.pizzaapplication.repository;
+package com.example.restaurantapplication.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

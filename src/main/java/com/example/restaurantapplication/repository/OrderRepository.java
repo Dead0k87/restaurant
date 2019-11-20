@@ -1,4 +1,4 @@
-package com.example.pizzaapplication.repository;
+package com.example.restaurantapplication.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
