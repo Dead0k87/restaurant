@@ -1,5 +1,5 @@
-<%@include file="common/header.jspf"%>
-<%@include file="common/navigation.jspf"%>
+<%@include file="fragments/header.jspf"%>
+<%@include file="fragments/navigation.jspf"%>
 
 <div class="container">
     <form:form method="POST" modelAttribute="restaurantOrder">
@@ -19,4 +19,4 @@
     </form:form>
 
 </div>
-<%@include file="common/footer.jspf"%>
+<%@include file="fragments/footer.jspf"%>

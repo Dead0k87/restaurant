@@ -1,0 +1,21 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<div th:insert="fragments/header::header"></div>
+<div th:insert="fragments/navbar::navbar"></div>
+
+<div class="container" sec:authorize="hasRole('ROLE_ADMIN')" > Text is visible to Administration only
+
+    <p><a href="/statistics_today">Statistics for today</a></p>
+    <p><a href="/statistics_this_month">Statistics for this month</a></p>
+    <p><a href="/statistics_this_year">Statistics for this year</a></p>
+    <p><a href="/statistics_all_time">Statistics for all time</a></p>
+
+    <h1>
+        <p> Total orders: <span th:text="${totalOrders}"/></p>
+        <p> Total revenue: <span th:text="${totalRevenue}"/></p>
+    </h1>
+</div>
+
+
+<div th:insert="fragments/footer::footer"></div>
+</body>

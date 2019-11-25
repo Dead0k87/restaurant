@@ -1,5 +1,5 @@
-<%@include file="common/header.jspf" %>
-<%@include file="common/navigation.jspf" %>
+<%@include file="fragments/header.jspf" %>
+<%@include file="fragments/navigation.jspf" %>
 
 <div class="container">
     <p> <a href="/statistics_today">Statistics for today</a></p>
@@ -17,4 +17,4 @@
     </h1>
 </div>
 
-<%@include file="common/footer.jspf" %>
+<%@include file="fragments/footer.jspf" %>

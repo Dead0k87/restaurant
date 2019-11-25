@@ -27,6 +27,7 @@ public class OrdersController {
 
     @GetMapping("/")
     public String login(ModelMap model) {
+
         return "redirect:/summary";
     }
 
@@ -35,7 +36,6 @@ public class OrdersController {
     public String showHomePage(ModelMap model) {
         long count = 0;
         double revenue = 0;
-
 
         if (isAdmin()) {
             count = repository.findAll().size();
@@ -48,7 +48,7 @@ public class OrdersController {
         }
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
-        return "summary_page";
+        return "summary";
     }
 
     @GetMapping("/orders_list")
@@ -58,10 +58,10 @@ public class OrdersController {
 
         if (isAdmin()) {
             List<RestaurantOrder> allOrders = repository.findAll();
-            model.put("orders_list", allOrders);
+            model.addAttribute("orders_list", allOrders);
         } else {
             List<RestaurantOrder> allOrders = repository.findByWaiterName(loginID);
-            model.put("orders_list", allOrders);
+            model.addAttribute("orders_list", allOrders);
         }
         return "orders_list";
     }
@@ -137,6 +137,7 @@ public class OrdersController {
         boolean hasAdminRole = authentication.getAuthorities().stream()
                 .anyMatch(r -> r.getAuthority().equals("ROLE_ADMIN"));
         return hasAdminRole;
+
     }
 
 }

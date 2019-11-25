@@ -1,0 +1,46 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div th:insert="fragments/header::header"></div>
+<div th:insert="fragments/navbar::navbar"></div>
+
+
+<div class="container">
+    <h1>Orders for: <b th:text="${login}"/></h1>
+    <a class="btn btn-success" href="/add_order">Add new order</a>
+</div>
+
+<div class="container">
+    <!--<form action="#" th:action="@{/orders_list}" th:object="${orders_list}" method="get">-->
+    <table class="table table-hover">
+
+        <thead>
+        <tr>
+            <th>Waiter</th>
+            <th>Date</th>
+            <th>Pizza ingredients</th>
+            <th>Waiter notes</th>
+            <th>Price</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+
+        <tbody th:each="order : ${orders_list}">
+        <tr>
+            <td th:text="${order.waiterName}"></td>
+            <td th:text="${order.date}"></td>
+            <td th:text="${order.components}"></td>
+            <td th:text="${order.notes}"></td>
+            <td th:text="${order.price}"></td>
+            <td><a type=" button" class="btn btn-info" th:href="@{/update_order(id=${order.id})}">Update</a>
+            </td>
+            <td><a type=" button" class="btn btn-warning" th:href="@{/delete_order(id=${order.id})}">Delete</a>
+            </td>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+<div th:insert="fragments/footer::footer"></div>
+</body>

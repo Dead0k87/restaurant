@@ -1,11 +1,13 @@
 <%@include file="fragments/header.jspf" %>
 <%@include file="fragments/navigation.jspf" %>
+
+
 <div class="container">
-    Exception happened!
-    <p> ${exception}</p>
-    <p> ${url}</p>
+    <h1>
+        <p> Total orders: ${totalOrders} </p>
+        <p> Total revenue: ${totalRevenue}</p>
 
-
-    </form>
+    </h1>
 </div>
+
 <%@include file="fragments/footer.jspf" %>

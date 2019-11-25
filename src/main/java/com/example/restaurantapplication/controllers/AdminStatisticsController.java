@@ -3,6 +3,8 @@ package com.example.restaurantapplication.controllers;
 import com.example.restaurantapplication.repository.OrderRepository;
 import com.example.restaurantapplication.repository.RestaurantOrder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,8 @@ public class AdminStatisticsController {
 
     @GetMapping("/statistics")
     public String showStatisticsPage() {
-        return "statistics_page";
+
+        return "admin_statistics";
     }
 
     @GetMapping("/statistics_today")
@@ -38,7 +41,7 @@ public class AdminStatisticsController {
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
 
-        return "statistics_page";
+        return "admin_statistics";
     }
 
     @GetMapping("/statistics_this_month")
@@ -57,7 +60,7 @@ public class AdminStatisticsController {
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
 
-        return "statistics_page";
+        return "admin_statistics";
     }
 
     @GetMapping("/statistics_this_year")
@@ -75,7 +78,7 @@ public class AdminStatisticsController {
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
 
-        return "statistics_page";
+        return "admin_statistics";
     }
 
     @GetMapping("/statistics_all_time")
@@ -87,7 +90,7 @@ public class AdminStatisticsController {
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
 
-        return "statistics_page";
+        return "admin_statistics";
     }
 
 
@@ -106,6 +109,8 @@ public class AdminStatisticsController {
     private int todayYear() {
         return todayDate().getYear();
     }
+
+
 
 
 }

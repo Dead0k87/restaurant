@@ -1,5 +1,5 @@
-<%@include file="common/header.jspf" %>
-<%@include file="common/navigation.jspf" %>
+<%@include file="fragments/header.jspf" %>
+<%@include file="fragments/navigation.jspf" %>
 <div class="container">
     <form method="post">
         <input type="checkbox"/>
@@ -14,4 +14,4 @@
 
     </form>
 </div>
-<%@include file="common/footer.jspf" %>
+<%@include file="fragments/footer.jspf" %>

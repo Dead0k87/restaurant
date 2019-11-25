@@ -1,5 +1,5 @@
-<%@include file="common/header.jspf" %>
-<%@include file="common/navigation.jspf" %>
+<%@include file="fragments/header.jspf" %>
+<%@include file="fragments/navigation.jspf" %>
 
 <div class="container">
     <%--<div class="dropdown" href="/ada">--%>
@@ -23,7 +23,7 @@
         <%--</form:form>--%>
     <%--</div>--%>
     <h1 style="color:  darkgray">Orders for: ${login}</h1>
-    <div>
+    <div class="container">
         <a class="btn btn-success" href="/add_order">Add new order</a>
     </div>
 
@@ -58,4 +58,4 @@
     </table>
 </div>
 
-<%@include file="common/footer.jspf" %>
+<%@include file="fragments/footer.jspf" %>

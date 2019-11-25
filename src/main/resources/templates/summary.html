@@ -1,0 +1,13 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div th:insert="fragments/header::header"></div>
+<div th:insert="fragments/navbar::navbar"></div>
+
+<div class="container">
+    <h1>
+        <p> Total orders: <span th:text="${totalOrders}"/></p>
+        <p> Total <b><span th:text="${login}"/>'s </b> revenue: <span th:text="${totalRevenue}"/></p>
+    </h1>
+</div>
+<div th:insert="fragments/footer::footer"></div>
+</body>
