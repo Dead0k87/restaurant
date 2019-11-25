@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SummaryController {
 
-    @GetMapping("/")
-    public String login(ModelMap model) {
-        return "redirect:/summary";
-    }
+
 
 }

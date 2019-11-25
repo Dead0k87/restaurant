@@ -1,7 +1,27 @@
-<%@include file="common/header.jspf"%>
-<%@include file="common/navigation.jspf"%>
+<%@include file="common/header.jspf" %>
+<%@include file="common/navigation.jspf" %>
 
 <div class="container">
+    <%--<div class="dropdown" href="/ada">--%>
+        <%--<form:form method="post">--%>
+            <%--<fieldset>--%>
+                    <%--&lt;%&ndash;to be implemented in future&ndash;%&gt;--%>
+                <%--<p>--%>
+                    <%--<label>Select Waiter (does not work, yet):</label>--%>
+                    <%--<select id="waiter">--%>
+                        <%--<option value="all">all</option>--%>
+                        <%--<option value="1">tom</option>--%>
+                        <%--<option value="2">two</option>--%>
+                        <%--<option value="3">three</option>--%>
+                        <%--<option value="4">four</option>--%>
+
+                    <%--</select>--%>
+                <%--</p>--%>
+
+            <%--</fieldset>--%>
+            <%--<button type="submit" class="btn btn-info">Filter</button>--%>
+        <%--</form:form>--%>
+    <%--</div>--%>
     <h1 style="color:  darkgray">Orders for: ${login}</h1>
     <div>
         <a class="btn btn-success" href="/add_order">Add new order</a>
@@ -10,6 +30,7 @@
     <table class="table table-hover">
         <thead>
         <tr>
+            <th>Waiter</th>
             <th>Date</th>
             <th>Pizza ingredients</th>
             <th>Waiter notes</th>
@@ -22,6 +43,7 @@
         <tbody>
         <c:forEach items="${orders_list}" var="order">
             <tr>
+                <td>${order.waiterName}</td>
                 <td> ${order.date}</td>
                     <%--<fmt:parseDate value="${order.date}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="parsedDateTime" type="both" />--%>
                     <%--<fmt:formatDate pattern="dd.MM.yyyy HH:mm:ss" value="${ parsedDateTime }" />--%>
@@ -36,4 +58,4 @@
     </table>
 </div>
 
-<%@include file="common/footer.jspf"%>
+<%@include file="common/footer.jspf" %>

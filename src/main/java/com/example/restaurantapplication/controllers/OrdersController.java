@@ -3,6 +3,7 @@ package com.example.restaurantapplication.controllers;
 import com.example.restaurantapplication.repository.OrderRepository;
 import com.example.restaurantapplication.repository.RestaurantOrder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -24,15 +25,28 @@ public class OrdersController {
     @Autowired
     private OrderRepository repository;
 
+    @GetMapping("/")
+    public String login(ModelMap model) {
+        return "redirect:/summary";
+    }
+
+
     @GetMapping("/summary")
     public String showHomePage(ModelMap model) {
+        long count = 0;
+        double revenue = 0;
 
-        long count = repository.findByWaiterName(getLoginID()).size();
-        double revenue = repository.findByWaiterName(getLoginID())
-                .stream().mapToDouble(ord -> ord.getPrice()).sum();
+
+        if (isAdmin()) {
+            count = repository.findAll().size();
+            revenue = repository.findAll()
+                    .stream().mapToDouble(ord -> ord.getPrice()).sum();
+        } else {
+            count = repository.findByWaiterName(getLoginID()).size();
+            revenue = repository.findByWaiterName(getLoginID())
+                    .stream().mapToDouble(ord -> ord.getPrice()).sum();
+        }
         model.put("totalOrders", count);
-
-
         model.put("totalRevenue", revenue);
         return "summary_page";
     }
@@ -40,27 +54,38 @@ public class OrdersController {
     @GetMapping("/orders_list")
     public String showOrdersListPerWaiter(ModelMap model) {
         String loginID = getLoginID();
-         model.put("login", loginID);
+        model.put("login", loginID);
 
-
-        List<RestaurantOrder> allOrders = repository.findByWaiterName(loginID);
-        model.put("orders_list", allOrders);
-
+        if (isAdmin()) {
+            List<RestaurantOrder> allOrders = repository.findAll();
+            model.put("orders_list", allOrders);
+        } else {
+            List<RestaurantOrder> allOrders = repository.findByWaiterName(loginID);
+            model.put("orders_list", allOrders);
+        }
         return "orders_list";
     }
+
+    @PostMapping("/orders_list")// UNDER CONSTRUCTION // i dont know how to put via dropdownlist a value, yet
+    public String showOrderListForFilteredWaiter(@RequestParam String waiter, ModelMap model) {
+        List<RestaurantOrder> allOrders = repository.findByWaiterName(waiter);
+        model.put("orders_list", allOrders);
+        return "orders_list";
+    }
+
 
     //ADD ORDER
     @GetMapping("/add_order")
     public String showNewOrderPage(ModelMap model) {
         RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(), "default components+");
         model.addAttribute("restaurantOrder", restaurantOrder);
-        return "add-or-update-order";
+        return "add_or_update_order";
     }
 
     @PostMapping("/add_order")
     public String submitOrder(ModelMap model, @Valid RestaurantOrder pizza, BindingResult result) {
         if (result.hasErrors()) {
-            return "add-or-update-order";
+            return "add_or_update_order";
         }
         RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(), pizza.getComponents());
         newPizza.setNotes(pizza.getNotes());
@@ -74,13 +99,13 @@ public class OrdersController {
     public String updateOrder(ModelMap model, @RequestParam long id) {
         RestaurantOrder restaurantOrder = repository.getById(id);
         model.put("restaurantOrder", restaurantOrder);
-        return "add-or-update-order";
+        return "add_or_update_order";
     }
 
     @PostMapping("/update_order")
     public String showUpdatedOrderOnAList(ModelMap model, @Valid RestaurantOrder restaurantOrder, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "add-or-update-order";
+            return "add_or_update_order";
         }
         restaurantOrder.setWaiterName(getLoginID());
         restaurantOrder.setDate(LocalDateTime.now());
@@ -105,4 +130,13 @@ public class OrdersController {
         }
         return authentication.toString();
     }
+
+    private boolean isAdmin() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        boolean hasAdminRole = authentication.getAuthorities().stream()
+                .anyMatch(r -> r.getAuthority().equals("ROLE_ADMIN"));
+        return hasAdminRole;
+    }
+
 }

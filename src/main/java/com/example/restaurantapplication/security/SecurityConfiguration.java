@@ -11,15 +11,29 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("login").password("{noop}password").roles("USER", "ADMIN");
-        auth.inMemoryAuthentication().withUser("tom").password("{noop}cat").roles("USER", "ADMIN");
+        auth.inMemoryAuthentication()
+                .withUser("tom").password("{noop}cat").roles("USER")
+                .and()
+                .withUser("login").password("{noop}password").roles("USER", "ADMIN");
+
+
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.httpBasic().and().authorizeRequests().antMatchers("/**")
-                .hasRole("ADMIN").anyRequest().authenticated()
-                .and().formLogin().and().csrf()
-                .disable().headers().frameOptions().disable();
+        http
+                .httpBasic().and()
+                .authorizeRequests()
+                .antMatchers("/**").hasRole("USER")
+//                .antMatchers("/summary").hasRole("USER")
+//                .antMatchers("/orders_list").hasRole("USER")
+//                .antMatchers("/summary/**").hasRole("USER")
+//                .antMatchers("/orders_list/**").hasRole("USER")
+//                .antMatchers("/**").hasRole("ADMIN")
+
+                .anyRequest()
+                .authenticated().and().formLogin()
+                .and().csrf().disable()
+                .headers().frameOptions().disable();
     }
 }

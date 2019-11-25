@@ -17,7 +17,7 @@ public class RestaurantOrder {
 
     @GeneratedValue
     @Id
-    private long id;
+    private Long id;
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime date;
@@ -29,7 +29,7 @@ public class RestaurantOrder {
     private String notes;
     private String waiterName;
 
-    public RestaurantOrder() {
+    private RestaurantOrder() {
     }
 
     public String getNotes() {
@@ -54,11 +54,11 @@ public class RestaurantOrder {
 //        this.pizzaIngredients = pizzaIngredients;
 //    }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
