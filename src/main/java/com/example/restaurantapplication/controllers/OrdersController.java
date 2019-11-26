@@ -1,7 +1,7 @@
 package com.example.restaurantapplication.controllers;
 
-import com.example.restaurantapplication.repository.OrderRepository;
 import com.example.restaurantapplication.repository.RestaurantOrder;
+import com.example.restaurantapplication.services.RestaurantServiceJPA;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -23,14 +23,12 @@ import java.util.List;
 public class OrdersController {
 
     @Autowired
-    private OrderRepository repository;
+    private RestaurantServiceJPA service;
 
     @GetMapping("/")
     public String login(ModelMap model) {
-
         return "redirect:/summary";
     }
-
 
     @GetMapping("/summary")
     public String showHomePage(ModelMap model) {
@@ -38,13 +36,13 @@ public class OrdersController {
         double revenue = 0;
 
         if (isAdmin()) {
-            count = repository.findAll().size();
-            revenue = repository.findAll()
-                    .stream().mapToDouble(ord -> ord.getPrice()).sum();
+            count = service.findAllOrders().size();
+            revenue = service.findAllOrders()
+                    .stream().mapToDouble(order -> order.getPrice()).sum();
         } else {
-            count = repository.findByWaiterName(getLoginID()).size();
-            revenue = repository.findByWaiterName(getLoginID())
-                    .stream().mapToDouble(ord -> ord.getPrice()).sum();
+            count = service.findAllOrdersByWaiterName(getLoginID()).size();
+            revenue = service.findAllOrdersByWaiterName(getLoginID())
+                    .stream().mapToDouble(order -> order.getPrice()).sum();
         }
         model.put("totalOrders", count);
         model.put("totalRevenue", revenue);
@@ -57,18 +55,18 @@ public class OrdersController {
         model.put("login", loginID);
 
         if (isAdmin()) {
-            List<RestaurantOrder> allOrders = repository.findAll();
-            model.addAttribute("orders_list", allOrders);
+            List<RestaurantOrder> allOrders = service.findAllOrders();
+            model.put("orders_list", allOrders);
         } else {
-            List<RestaurantOrder> allOrders = repository.findByWaiterName(loginID);
-            model.addAttribute("orders_list", allOrders);
+            List<RestaurantOrder> allOrders = service.findAllOrdersByWaiterName(loginID);
+            model.put("orders_list", allOrders);
         }
         return "orders_list";
     }
 
     @PostMapping("/orders_list")// UNDER CONSTRUCTION // i dont know how to put via dropdownlist a value, yet
     public String showOrderListForFilteredWaiter(@RequestParam String waiter, ModelMap model) {
-        List<RestaurantOrder> allOrders = repository.findByWaiterName(waiter);
+        List<RestaurantOrder> allOrders = service.findAllOrdersByWaiterName(waiter);
         model.put("orders_list", allOrders);
         return "orders_list";
     }
@@ -77,27 +75,27 @@ public class OrdersController {
     //ADD ORDER
     @GetMapping("/add_order")
     public String showNewOrderPage(ModelMap model) {
-        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(), "default components+");
-        model.addAttribute("restaurantOrder", restaurantOrder);
+        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(), "dough, tomatoes +"); //Arrays.asList()
+        model.put("restaurantOrder", restaurantOrder);
         return "add_or_update_order";
     }
 
     @PostMapping("/add_order")
-    public String submitOrder(ModelMap model, @Valid RestaurantOrder pizza, BindingResult result) {
+    public String submitOrder(ModelMap model, @Valid RestaurantOrder restaurantOrder, BindingResult result) {
         if (result.hasErrors()) {
             return "add_or_update_order";
         }
-        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(), pizza.getComponents());
-        newPizza.setNotes(pizza.getNotes());
+        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(), restaurantOrder.getItems());
+        newPizza.setNotes(restaurantOrder.getNotes());
 
-        repository.save(newPizza);
+        service.saveOrder(newPizza);
         return "redirect:/orders_list";
     }
 
     //UPDATE ORDER
     @GetMapping("/update_order")
     public String updateOrder(ModelMap model, @RequestParam long id) {
-        RestaurantOrder restaurantOrder = repository.getById(id);
+        RestaurantOrder restaurantOrder = service.getOrderByID(id);
         model.put("restaurantOrder", restaurantOrder);
         return "add_or_update_order";
     }
@@ -109,15 +107,14 @@ public class OrdersController {
         }
         restaurantOrder.setWaiterName(getLoginID());
         restaurantOrder.setDate(LocalDateTime.now());
-        repository.save(restaurantOrder);
+        service.saveOrder(restaurantOrder);
         return "redirect:/orders_list";
     }
 
     //DELETE ORDER
     @GetMapping("/delete_order")
     public String deleteOrder(@RequestParam long id) {
-
-        repository.deleteById(id);
+        service.deleteOrderByID(id);
         return "redirect:/orders_list";
     }
 

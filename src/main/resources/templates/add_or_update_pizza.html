@@ -1,0 +1,49 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div th:insert="fragments/header::header"></div>
+<div th:insert="fragments/navbar::navbar"></div>
+
+<div class="container">
+
+
+    <form th:action="@{/add_pizza}" method="POST" th:object="${restaurantOrder}">
+        <span class="validationError"
+              th:if="${#fields.hasErrors('items')}"
+              th:errors="*{items}">Ingredient Error</span>
+
+
+        <div th:each="menuItem : ${restaurantMenu}">
+            <input name="item" type="checkbox" th:value="${menuItem}" th:field="${restaurantOrder.items}"/>
+            <span th:text="${menuItem}">INGREDIENT</span><br/>
+
+        </div>
+
+
+        <div>
+            <button class="btn btn-success" type="submit">Add</button>
+        </div>
+    </form>
+
+
+</div>
+<div th:insert="fragments/footer::footer"></div>
+</body>
+
+
+<!--//OLD FORM-->
+<!--<form action="#" th:action="@{/add_order}" th:object="${restaurantOrder}" method="post">-->
+<!--<table border="1">-->
+<!--<fieldset class="form-group">-->
+<!--<label th:text="Items"/>-->
+<!--<input type="text" th:field="*{items}" class="form-control"/>-->
+
+<!--</fieldset>-->
+
+<!--<fieldset class="form-group">-->
+<!--<label th:text="Notes"/>-->
+<!--<input type="text" th:field="*{notes}" class="form-control"/>-->
+<!--</fieldset>-->
+<!--<button class="btn btn-success" type="submit">Add</button>-->
+
+<!--</table>-->
+<!--</form>-->

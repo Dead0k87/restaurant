@@ -11,6 +11,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
+//https://github.com/thymeleaf/thymeleaf-extras-springsecurity/issues/61
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired

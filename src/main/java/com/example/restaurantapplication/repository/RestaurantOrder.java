@@ -1,58 +1,47 @@
 package com.example.restaurantapplication.repository;
 
+import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.RestaurantOrderItem;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Size;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class RestaurantOrder {
     // RestaurantOrder status = delivered yes not
     // RestaurantOrder payed yes/no
-    //List<Ingredient> pizzaIngredients;
 
-    @GeneratedValue
     @Id
+    @GeneratedValue
     private Long id;
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime date;
+    private String waiterName;
 
     @Size(min = 10, message = "not enough components")
-    private String components;
+    private String items;
 
     private double price;
     private String notes;
-    private String waiterName;
+
+
+//    @OneToMany(mappedBy = "order" )
+//    //@JoinColumn(name = "order_id")
+//    private List<RestaurantOrderItem> items = new ArrayList<>();
+
+    public RestaurantOrder(LocalDateTime date, String waiterName, String items ) { //List<RestaurantOrderItem> orderItems
+        this.date = date;
+        this.waiterName = waiterName;
+        this.items = items;
+
+    }
 
     private RestaurantOrder() {
     }
-
-    public String getNotes() {
-        return notes;
-    }
-
-    public void setNotes(String notes) {
-        this.notes = notes;
-    }
-
-    public RestaurantOrder(LocalDateTime date, String waiterName, String components) {
-        this.date = date;
-        this.waiterName = waiterName;
-        this.components = components;
-    }
-
-//    public List<Ingredient> getPizzaIngredients() {
-//        return pizzaIngredients;
-//    }
-//
-//    public void setPizzaIngredients(List<Ingredient> pizzaIngredients) {
-//        this.pizzaIngredients = pizzaIngredients;
-//    }
 
     public Long getId() {
         return id;
@@ -78,12 +67,12 @@ public class RestaurantOrder {
         this.waiterName = waiterName;
     }
 
-    public String getComponents() {
-        return components;
+    public String getItems() {
+        return items;
     }
 
-    public void setComponents(String components) {
-        this.components = components;
+    public void setItems(String items) {
+        this.items = items;
     }
 
     public double getPrice() {
@@ -94,14 +83,23 @@ public class RestaurantOrder {
         this.price = price;
     }
 
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
 
     @Override
     public String toString() {
         return "RestaurantOrder{" +
-                "date=" + date +
-                ", waiterName='" + waiterName + '\'' +
-                ", components='" + components + '\'' +
+                "id=" + id +
+                ", date=" + date +
                 ", price=" + price +
+                ", notes='" + notes + '\'' +
+                ", waiterName='" + waiterName + '\'' +
+                ", items=" + items +
                 '}';
     }
 }

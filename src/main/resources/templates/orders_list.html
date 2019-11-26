@@ -17,7 +17,7 @@
         <tr>
             <th>Waiter</th>
             <th>Date</th>
-            <th>Pizza ingredients</th>
+            <th>Pizza items</th>
             <th>Waiter notes</th>
             <th>Price</th>
             <th>Update</th>
@@ -29,7 +29,7 @@
         <tr>
             <td th:text="${order.waiterName}"></td>
             <td th:text="${order.date}"></td>
-            <td th:text="${order.components}"></td>
+            <td th:text="${order.items}"></td>
             <td th:text="${order.notes}"></td>
             <td th:text="${order.price}"></td>
             <td><a type=" button" class="btn btn-info" th:href="@{/update_order(id=${order.id})}">Update</a>
