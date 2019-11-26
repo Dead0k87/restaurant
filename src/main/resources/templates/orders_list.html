@@ -28,7 +28,7 @@
         <tbody th:each="order : ${orders_list}">
         <tr>
             <td th:text="${order.waiterName}"></td>
-            <td th:text="${order.date}"></td>
+            <td th:text="${#temporals.format(order.date, 'dd-MM-yyyy, HH:mm')}"></td>
             <td th:text="${order.items}"></td>
             <td th:text="${order.notes}"></td>
             <td th:text="${order.price}"></td>

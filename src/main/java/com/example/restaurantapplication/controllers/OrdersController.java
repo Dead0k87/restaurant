@@ -101,12 +101,17 @@ public class OrdersController {
     }
 
     @PostMapping("/update_order")
-    public String showUpdatedOrderOnAList(ModelMap model, @Valid RestaurantOrder restaurantOrder, BindingResult bindingResult) {
+    public String showUpdatedOrderOnAList(ModelMap model, @Valid RestaurantOrder restaurantOrder,
+                                          BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "add_or_update_order";
         }
+//        restaurantOrder.setId(restaurantOrder.getId());
         restaurantOrder.setWaiterName(getLoginID());
         restaurantOrder.setDate(LocalDateTime.now());
+//        restaurantOrder.setPrice(restaurantOrder.getPrice());
+
+
         service.saveOrder(restaurantOrder);
         return "redirect:/orders_list";
     }
