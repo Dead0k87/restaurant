@@ -1,6 +1,6 @@
 package com.example.restaurantapplication.repository;
 
-import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.RestaurantOrderItem;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.Pizza;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -29,11 +29,11 @@ public class RestaurantOrder {
     private String notes;
 
 
-//    @OneToMany(mappedBy = "order" )
-//    //@JoinColumn(name = "order_id")
-//    private List<RestaurantOrderItem> items = new ArrayList<>();
+    @OneToMany(mappedBy = "order")
+    //@JoinColumn(name = "order_id")
+    private List<Pizza> pizzas = new ArrayList<>();
 
-    public RestaurantOrder(LocalDateTime date, String waiterName, String items ) { //List<RestaurantOrderItem> orderItems
+    public RestaurantOrder(LocalDateTime date, String waiterName, String items) { //List<RestaurantOrderItem> orderItems
         this.date = date;
         this.waiterName = waiterName;
         this.items = items;
@@ -42,6 +42,20 @@ public class RestaurantOrder {
 
     private RestaurantOrder() {
     }
+
+
+    public List<Pizza> getPizzas() {
+        return pizzas;
+    }
+
+    public void addPizza(Pizza pizza) {
+        this.pizzas.add(pizza);
+    }
+
+    public void removePizza(Pizza pizza) {
+        this.pizzas.remove(pizza);
+    }
+
 
     public Long getId() {
         return id;
