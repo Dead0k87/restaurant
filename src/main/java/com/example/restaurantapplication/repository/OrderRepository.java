@@ -11,7 +11,8 @@ import java.util.List;
 public interface OrderRepository extends JpaRepository<RestaurantOrder, Long> {
 
     public RestaurantOrder getById(long id);
-    public List<RestaurantOrder> findByWaiterName(String waiterName);
+    public List<RestaurantOrder> findByWaiterNameOrderByDateDesc(String waiterName); //OrderByDateDesc
+
 
     //List<Ingredient> getByProductType(Ingredient.IngredientType type);
 

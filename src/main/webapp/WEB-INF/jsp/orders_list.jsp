@@ -19,7 +19,7 @@
                 <%--</p>--%>
 
             <%--</fieldset>--%>
-            <%--<button type="submit" class="btn btn-info">Filter</button>--%>
+            <%--<button itemType="submit" class="btn btn-info">Filter</button>--%>
         <%--</form:form>--%>
     <%--</div>--%>
     <h1 style="color:  darkgray">Orders for: ${login}</h1>
@@ -32,7 +32,7 @@
         <tr>
             <th>Waiter</th>
             <th>Date</th>
-            <th>Pizza ingredients</th>
+            <th>Pizza description</th>
             <th>Waiter notes</th>
             <th>Price</th>
             <th>Update</th>
@@ -45,13 +45,13 @@
             <tr>
                 <td>${order.waiterName}</td>
                 <td> ${order.date}</td>
-                    <%--<fmt:parseDate value="${order.date}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="parsedDateTime" type="both" />--%>
+                    <%--<fmt:parseDate value="${order.date}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="parsedDateTime" itemType="both" />--%>
                     <%--<fmt:formatDate pattern="dd.MM.yyyy HH:mm:ss" value="${ parsedDateTime }" />--%>
                 <td>${order.components}</td>
                 <td>${order.notes}</td>
                 <td>${order.price}</td>
-                <td><a type="button" class="btn btn-info" href="/update_order?id=${order.id}">Update</a></td>
-                <td><a type="button" class="btn btn-warning" href="/delete_order?id=${order.id}">Delete</a></td>
+                <td><a itemType="button" class="btn btn-info" href="/update_order?id=${order.id}">Update</a></td>
+                <td><a itemType="button" class="btn btn-warning" href="/delete_order?id=${order.id}">Delete</a></td>
             </tr>
         </c:forEach>
         </tbody>

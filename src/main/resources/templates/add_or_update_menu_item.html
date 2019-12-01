@@ -1,0 +1,60 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div th:insert="fragments/header::header"></div>
+<div th:insert="fragments/navbar::navbar"></div>
+
+<div class="container">
+
+
+    <form method="POST" th:object="${restaurantOrder}">
+        <!--<span class="validationError"-->
+              <!--th:if="${#fields.hasErrors('items')}">-->
+              <!--th:errors="*{items}">Ingredient Error-->
+        <!--&gt;</span>-->
+
+
+        <!--<div th:each="menuItem : ${restaurantMenu}">-->
+            <!--<input name="item" itemType="checkbox"-->
+                   <!--th:value="${menuItem}" th:field="${restaurantOrder.menuItems}"/>-->
+            <!--<span th:text="${menuItem}">INGREDIENT</span><br/>-->
+        <!--</div>-->
+
+
+        <tr>
+            <td>Menu:</td>
+            <td>
+                <div th:each="menuItem : ${restaurantMenu}">
+                    <input type="checkbox" name="menuItems" th:value="${menuItem.UID}"/>
+                    <label th:text="${menuItem.name}"></label>
+                </div>
+            </td>
+        </tr>
+
+        <div>
+            <button class="btn btn-success" itemType="submit">Add</button>
+        </div>
+    </form>
+
+
+</div>
+<div th:insert="fragments/footer::footer"></div>
+</body>
+
+
+<!--//OLD FORM-->
+<!--<form action="#" th:action="@{/add_order}" th:object="${restaurantOrder}" method="post">-->
+<!--<table border="1">-->
+<!--<fieldset class="form-group">-->
+<!--<label th:text="Items"/>-->
+<!--<input itemType="text" th:field="*{items}" class="form-control"/>-->
+
+<!--</fieldset>-->
+
+<!--<fieldset class="form-group">-->
+<!--<label th:text="Notes"/>-->
+<!--<input itemType="text" th:field="*{notes}" class="form-control"/>-->
+<!--</fieldset>-->
+<!--<button class="btn btn-success" itemType="submit">Add</button>-->
+
+<!--</table>-->
+<!--</form>-->

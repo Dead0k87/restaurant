@@ -17,7 +17,6 @@
         <tr>
             <th>Waiter</th>
             <th>Date</th>
-            <th>Pizza items</th>
             <th>Order list</th>
             <th>Waiter notes</th>
             <th>Price</th>
@@ -30,18 +29,17 @@
         <tr>
             <td th:text="${order.waiterName}"></td>
             <td th:text="${#temporals.format(order.date, 'dd-MM-yyyy, HH:mm')}"></td>
-            <td th:text="${order.items}"></td>
 
-            <td> <span th:each="pizza, iterStat : ${order.pizzas}"
+            <td> <span th:each="menuItem, iterStat : ${order.menuItems}"
                        th:text="!${iterStat.last} ?
-                ${pizza.name} + ', ':
-                ${pizza.name}"></span></td>
+                ${menuItem.name} + ', ':
+                ${menuItem.name}"></span></td>
 
             <td th:text="${order.notes}"></td>
             <td th:text="${order.price}"></td>
-            <td><a type=" button" class="btn btn-info" th:href="@{/update_order(id=${order.id})}">Update</a>
+            <td><a itemType=" button" class="btn btn-info" th:href="@{/update_order(id=${order.id})}">Update</a>
             </td>
-            <td><a type=" button" class="btn btn-warning" th:href="@{/delete_order(id=${order.id})}">Delete</a>
+            <td><a itemType=" button" class="btn btn-warning" th:href="@{/delete_order(id=${order.id})}">Delete</a>
             </td>
             </td>
         </tr>

@@ -20,6 +20,7 @@ import java.util.List;
 
 @Controller
 @SessionAttributes("login")
+//@RequestMapping(path = "/orders")
 public class OrdersController {
 
     @Autowired
@@ -75,7 +76,8 @@ public class OrdersController {
     //ADD ORDER
     @GetMapping("/add_order")
     public String showNewOrderPage(ModelMap model) {
-        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID(), "dough, tomatoes +"); //Arrays.asList()
+        RestaurantOrder restaurantOrder
+                = new RestaurantOrder(LocalDateTime.now(), getLoginID()); //Arrays.asList()
         model.put("restaurantOrder", restaurantOrder);
         return "add_or_update_order";
     }
@@ -85,7 +87,7 @@ public class OrdersController {
         if (result.hasErrors()) {
             return "add_or_update_order";
         }
-        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID(), restaurantOrder.getItems());
+        RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID());
         newPizza.setNotes(restaurantOrder.getNotes());
 
         service.saveOrder(newPizza);

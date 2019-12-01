@@ -6,16 +6,16 @@
         <form:hidden path="id"/>
         <fieldset class="form-group">
             <form:label path="components">Components:</form:label>
-            <form:input path="components" type="text" class="form-control" required="required"/>
+            <form:input path="components" itemType="text" class="form-control" required="required"/>
             <form:errors path="components" class="text-warning"/>
         </fieldset>
 
         <fieldset class="form-group">
             <form:label path="notes">Notes:</form:label>
-            <form:input path="notes" type="text" cssClass="form-control"/>
+            <form:input path="notes" itemType="text" cssClass="form-control"/>
         </fieldset>
 
-        <button type="submit" class="btn btn-success">Add</button>
+        <button itemType="submit" class="btn btn-success">Add</button>
     </form:form>
 
 </div>
