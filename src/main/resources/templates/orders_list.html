@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Orders for: <b th:text="${login}"/></h1>
-    <a class="btn btn-success" href="/add_order">Add new order</a>
+    <a class="btn btn-success" href="/orders/add">Add new order</a>
 </div>
 
 <div class="container">
@@ -22,6 +22,7 @@
             <th>Price</th>
             <th>Update</th>
             <th>Delete</th>
+            <th>Details</th>
         </tr>
         </thead>
 
@@ -37,9 +38,10 @@
 
             <td th:text="${order.notes}"></td>
             <td th:text="${order.price}"></td>
-            <td><a itemType=" button" class="btn btn-info" th:href="@{/update_order(id=${order.id})}">Update</a>
+            <td><a itemType=" button" class="btn btn-info" th:href="@{update(id=${order.id})}">Update</a>
             </td>
-            <td><a itemType=" button" class="btn btn-warning" th:href="@{/delete_order(id=${order.id})}">Delete</a>
+            <td><a itemType=" button" class="btn btn-warning" th:href="@{delete(id=${order.id})}">Delete</a>
+            <td><a itemType=" button" class="btn btn-warning" th:href="@{details(id=${order.id})}">Order Details</a>
             </td>
             </td>
         </tr>

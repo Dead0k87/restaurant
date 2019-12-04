@@ -1,4 +1,4 @@
-package com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.pizzacomponents;
+package com.example.restaurantapplication.repository.RestaurantOrderItems.pizzacomponents;
 
 public class SmokedChicken extends Component {
     private SmokedChicken() {

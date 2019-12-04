@@ -1,7 +1,13 @@
 package com.example.restaurantapplication.controllers;
 
+import com.example.restaurantapplication.repository.MenuItemsRepository;
+import com.example.restaurantapplication.repository.OrderRepository;
 import com.example.restaurantapplication.repository.RestaurantOrder;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.MenuItem;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.MenuItemsFactory;
 import com.example.restaurantapplication.services.RestaurantServiceJPA;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -9,10 +15,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDateTime;
@@ -20,15 +23,29 @@ import java.util.List;
 
 @Controller
 @SessionAttributes("login")
-//@RequestMapping(path = "/orders")
+@RequestMapping(path = "/orders")
 public class OrdersController {
 
     @Autowired
     private RestaurantServiceJPA service;
 
+    @Autowired
+    private OrderRepository repository;
+
+    @Autowired
+    private RestaurantServiceJPA restaurantService;
+
+    @Autowired
+    private MenuItemsFactory menuItemsFactory;
+
+    @Autowired
+    MenuItemsRepository menuItemsRepository;
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @GetMapping("/")
     public String login(ModelMap model) {
-        return "redirect:/summary";
+        return "redirect:orders/summary";
     }
 
     @GetMapping("/summary")
@@ -50,7 +67,7 @@ public class OrdersController {
         return "summary";
     }
 
-    @GetMapping("/orders_list")
+    @GetMapping("/list")
     public String showOrdersListPerWaiter(ModelMap model) {
         String loginID = getLoginID();
         model.put("login", loginID);
@@ -65,7 +82,7 @@ public class OrdersController {
         return "orders_list";
     }
 
-    @PostMapping("/orders_list")// UNDER CONSTRUCTION // i dont know how to put via dropdownlist a value, yet
+    @PostMapping("/list")// UNDER CONSTRUCTION // i dont know how to put via dropdownlist a value, yet
     public String showOrderListForFilteredWaiter(@RequestParam String waiter, ModelMap model) {
         List<RestaurantOrder> allOrders = service.findAllOrdersByWaiterName(waiter);
         model.put("orders_list", allOrders);
@@ -74,35 +91,52 @@ public class OrdersController {
 
 
     //ADD ORDER
-    @GetMapping("/add_order")
+    //ADD PIZZA
+    @GetMapping("/add")
     public String showNewOrderPage(ModelMap model) {
-        RestaurantOrder restaurantOrder
-                = new RestaurantOrder(LocalDateTime.now(), getLoginID()); //Arrays.asList()
+        RestaurantOrder restaurantOrder = new RestaurantOrder(LocalDateTime.now(), getLoginID()); //Arrays.asList()
         model.put("restaurantOrder", restaurantOrder);
-        return "add_or_update_order";
+
+        model.put("restaurantMenu", restaurantService.getRestaurantMenu());
+
+        return "add_or_update_menu_item";
     }
 
-    @PostMapping("/add_order")
-    public String submitOrder(ModelMap model, @Valid RestaurantOrder restaurantOrder, BindingResult result) {
+    @PostMapping("/add")
+    public String submitOrder(ModelMap model, @Valid RestaurantOrder restaurantOrder,
+                              @RequestParam(value = "menuItems", required = false) String[] UIDs,
+                              BindingResult result) {
         if (result.hasErrors()) {
-            return "add_or_update_order";
+            return "add_or_update_menu_item";
         }
+
         RestaurantOrder newPizza = new RestaurantOrder(LocalDateTime.now(), getLoginID());
         newPizza.setNotes(restaurantOrder.getNotes());
 
-        service.saveOrder(newPizza);
-        return "redirect:/orders_list";
+        if (UIDs != null) {
+            for (String mItemUID : UIDs
+            ) {
+                MenuItem menuItem = menuItemsFactory.getNewMenuItemByUID(mItemUID);
+                logger.info("new Menu item From factory Based on UID {}",menuItem);
+                MenuItem menuItemSavedInRepository = menuItemsRepository.save(menuItem);
+                menuItemSavedInRepository.setOrder(newPizza);
+                newPizza.getMenuItems().add(menuItemSavedInRepository);
+                repository.save(newPizza);
+            }
+        }
+        repository.save(newPizza);
+        return "redirect:/orders/list";
     }
 
     //UPDATE ORDER
-    @GetMapping("/update_order")
+    @GetMapping("/update")
     public String updateOrder(ModelMap model, @RequestParam long id) {
         RestaurantOrder restaurantOrder = service.getOrderByID(id);
         model.put("restaurantOrder", restaurantOrder);
         return "add_or_update_order";
     }
 
-    @PostMapping("/update_order")
+    @PostMapping("/update")
     public String showUpdatedOrderOnAList(ModelMap model, @Valid RestaurantOrder restaurantOrder,
                                           BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -113,16 +147,15 @@ public class OrdersController {
         restaurantOrder.setDate(LocalDateTime.now());
 //        restaurantOrder.setPrice(restaurantOrder.getPrice());
 
-
         service.saveOrder(restaurantOrder);
-        return "redirect:/orders_list";
+        return "redirect:/orders/list";
     }
 
     //DELETE ORDER
-    @GetMapping("/delete_order")
+    @GetMapping("/delete")
     public String deleteOrder(@RequestParam long id) {
         service.deleteOrderByID(id);
-        return "redirect:/orders_list";
+        return "redirect:/orders/list";
     }
 
 

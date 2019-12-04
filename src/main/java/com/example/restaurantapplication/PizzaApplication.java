@@ -35,8 +35,8 @@ public class PizzaApplication implements CommandLineRunner {
 //
 //        RestaurantOrder order = orderRepository.save(new RestaurantOrder(LocalDateTime.now(),
 //                "tom"));
-//        order.addPizza(menuItem1);
-//        order.addPizza(menuItem2);
+//        order.addMenuItem(menuItem1);
+//        order.addMenuItem(menuItem2);
 
     }
 }

@@ -22,6 +22,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .withUser("login").password(passwordEncoder().encode("password")).roles("USER", "ADMIN");
     }
 
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -41,7 +42,54 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
                 .anyRequest()
                 .authenticated().and().formLogin()
-                .and().csrf().disable()
+                .and().csrf().disable()// disabled frames antiattack  token for developement reasons
                 .headers().frameOptions().disable();
     }
 }
+
+
+// ==============
+//@OrdersConfiguration
+//@EnableWebSecurity
+////https://github.com/thymeleaf/thymeleaf-extras-springsecurity/issues/61
+//public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+//
+//    @Autowired
+//    private UserDetailsService userDetailsService;
+//
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+//    }
+//
+//    @Bean
+//    public BCryptPasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
+//
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http
+//                .authorizeRequests()
+////                .antMatchers("/summary", "/orders_list")
+////                .access("hasRole('ROLE_USER')")
+//                .antMatchers("/", "/**").access("permitAll")
+//
+//
+//                .and()
+//                .formLogin()
+//                .loginPage("/login")
+//
+//                .and()
+//                .logout()
+//                .logoutSuccessUrl("/")
+//
+//                .and()
+//                .csrf()
+//                .ignoringAntMatchers("/h2-console/**")
+//
+//                .and()
+//                .headers()
+//                .frameOptions()
+//                .sameOrigin();
+//    }
+//
+//}

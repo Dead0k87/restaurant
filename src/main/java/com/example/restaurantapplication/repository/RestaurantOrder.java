@@ -1,18 +1,18 @@
 package com.example.restaurantapplication.repository;
 
-import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.MenuItem;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.MenuItem;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+//@Table(name = "Restraurant_Order")
 public class RestaurantOrder {
     // RestaurantOrder status = delivered yes not
     // RestaurantOrder payed yes/no
@@ -24,9 +24,8 @@ public class RestaurantOrder {
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime date;
     private String waiterName;
-//
-//    @Size(min = 0, message = "Message from RestaurantOrder class during validation >> not enough components")
 
+    //    @Size(min = 0, message = "Message from RestaurantOrder class during validation >> not enough components")
     private double price;
     private String notes;
 
@@ -34,27 +33,29 @@ public class RestaurantOrder {
     //@JoinColumn(name = "order_id")
     private List<MenuItem> menuItems = new ArrayList<>();
 
+    private RestaurantOrder() {
+    }
+
     public RestaurantOrder(LocalDateTime date, String waiterName) { //List<RestaurantOrderItem> orderItems
         this.date = date;
         this.waiterName = waiterName;
     }
 
-    private RestaurantOrder() {
+    private double calculatePrice() {
+        return menuItems.stream().mapToDouble(x -> x.getPrice()).sum();
     }
-
 
     public List<MenuItem> getMenuItems() {
         return menuItems;
     }
 
-    public void addPizza(MenuItem menuItem) {
+    public void addMenuItem(MenuItem menuItem) {
         this.menuItems.add(menuItem);
     }
 
-    public void removePizza(MenuItem menuItem) {
+    public void removeMenuItem(MenuItem menuItem) {
         this.menuItems.remove(menuItem);
     }
-
 
     public Long getId() {
         return id;
@@ -80,14 +81,11 @@ public class RestaurantOrder {
         this.waiterName = waiterName;
     }
 
-
     public double getPrice() {
+        this.price = calculatePrice();
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
     public String getNotes() {
         return notes;
@@ -96,6 +94,12 @@ public class RestaurantOrder {
     public void setNotes(String notes) {
         this.notes = notes;
     }
+
+
+//    @PrePersist
+//    void createdAt() {
+//        this.date = LocalDateTime.now();
+//    }
 
     @Override
     public String toString() {

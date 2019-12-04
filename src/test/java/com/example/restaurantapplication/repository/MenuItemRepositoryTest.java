@@ -2,8 +2,8 @@ package com.example.restaurantapplication.repository;
 
 
 import com.example.restaurantapplication.PizzaApplication;
-import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.ItemType;
-import com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas.MenuItem;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.ItemType;
+import com.example.restaurantapplication.repository.RestaurantOrderItems.MenuItem;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,8 +41,8 @@ public class MenuItemRepositoryTest {
 
         RestaurantOrder order = orderRepository.save(new RestaurantOrder(LocalDateTime.now(),
                 "tom"));
-        order.addPizza(menuItem1);
-        order.addPizza(menuItem2);
+        order.addMenuItem(menuItem1);
+        order.addMenuItem(menuItem2);
 
         logger.info("order id {}", order.getId());
         String pizza1Name = orderRepository.findById(3L).get().getMenuItems().get(0).getName();

@@ -2,31 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b685a-f576-452d-a679-23c6730d35e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/RestaurantOrderConfigurationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepositoryUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/configprops.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-application.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdatePizzaControllerExperimental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/ItemType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItemsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BBQSauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/BBQSauce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Bacon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Bacon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BeefCarpaccio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/BeefCarpaccio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/CarmelOnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/CarmelOnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Corregio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Corregio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Jalapeno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Jalapeno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Mozzarella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Mozzarella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Oregano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Oregano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Pepperoni.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Pepperoni.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/SmokedChicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/SmokedChicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/TomatoSauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/TomatoSauce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add_or_update_pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add_or_update_menu_item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/add_or_update_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/add_or_update_order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fragments/navigation.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fragments/navigation.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orders_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/orders_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/OrderRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/OrderRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/PizzaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,49 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_menu_item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+            <state relative-caret-position="136">
+              <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,22 +71,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="64" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="64" />
+            <state relative-caret-position="187">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/orders_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -143,57 +140,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Bacon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/BBQSauce.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/BeefCarpaccio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/CarmelOnion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Corregio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Jalapeno.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Mozzarella.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Oregano.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/Pepperoni.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/SmokedChicken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzacomponents/TomatoSauce.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzas/HotRoad.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzas/Pizza.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzas/HotRoadPizza.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzas/BBQPizza.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/pizzas/ItalianPizza.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/RestaurantOrderItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/ROrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/Ord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Component.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdatePizzaControllerExperimental.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/HotRoadPizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItalianPizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/BBQPizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/PizzaRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/PizzaRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin_statistics.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItemType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/Pizza.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/PizzaFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/add_or_update_pizza.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/OrderRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/add_or_update_menu_item.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/UserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/UserRepositoryUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepositoryUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/OrdersConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/RestaurantOrderConfigurationProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/configprops.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/DesignTacoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" />
       </list>
     </option>
   </component>
@@ -205,8 +202,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="372" />
-    <option name="y" value="75" />
+    <option name="x" value="15" />
+    <option name="y" value="30" />
     <option name="width" value="1890" />
     <option name="height" value="975" />
   </component>
@@ -216,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,7 +273,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="pizzas" type="462c0819:PsiDirectoryNode" />
+              <item name="RestaurantOrderItems" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +307,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
@@ -349,7 +356,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,7 +366,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575204870194" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575495964308" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -370,6 +376,9 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.carmanufacturerdealerapplication.repository" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.restaurantapplication.repository" />
       <recent name="com.example.carmanufacturerdealerapplication.controllers" />
@@ -378,13 +387,9 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.restaurantapplication.repository" />
       <recent name="com.example.restaurantapplication" />
       <recent name="com.example.pizzaapplication.controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\resources\templates\common" />
-      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\resources\templates" />
-      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\webapp\WEB-INF\jsp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\resources\templates" />
@@ -399,8 +404,10 @@
       <recent name="com.example.restaurantapplication.repository.pizzacomponents" />
       <recent name="com.example.pizzaapplication.repository" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.carmanufacturerdealerapplication.repository" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\resources\templates\common" />
+      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\resources\templates" />
+      <recent name="D:\OneDrive\Kursy\!JAVA\!Igli mentoring\restaurant-application\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -555,7 +562,12 @@
       <workItem from="1575030033464" duration="1085000" />
       <workItem from="1575046786115" duration="862000" />
       <workItem from="1575136599875" duration="9610000" />
-      <workItem from="1575198408786" duration="6609000" />
+      <workItem from="1575198408786" duration="7324000" />
+      <workItem from="1575227681328" duration="2828000" />
+      <workItem from="1575313808652" duration="598000" />
+      <workItem from="1575320162484" duration="3325000" />
+      <workItem from="1575399007572" duration="11358000" />
+      <workItem from="1575485091391" duration="5559000" />
     </task>
     <task id="LOCAL-00001" summary="security,errorhandler,logout,summary">
       <created>1574286894208</created>
@@ -606,13 +618,17 @@
       <option name="project" value="LOCAL" />
       <updated>1574971465912</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="security,errorhandler,logout,summary">
+      <created>1575205054811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575205054812</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PizzaRepositoryTest_addPizzasToOrder - 2019.11.28 at 20h 27m 37s.xml">
-      <configuration name="PizzaRepositoryTest.addPizzasToOrder" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PizzaRepositoryTest_addPizzasToOrder - 2019.11.28 at 20h 30m 27s.xml">
       <configuration name="PizzaRepositoryTest.addPizzasToOrder" configurationId="JUnit" />
     </history-entry>
@@ -640,15 +656,19 @@
     <history-entry file="PizzaRepositoryTest_addPizzasToOrder - 2019.11.30 at 20h 01m 50s.xml">
       <configuration name="PizzaRepositoryTest.addPizzasToOrder" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MenuItemRepositoryTest_addPizzasToOrder - 2019.12.01 at 13h 59m 53s.xml">
+      <configuration name="MenuItemRepositoryTest.addPizzasToOrder" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144991000" />
+    <option name="totallyTimeSpent" value="169374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2672065" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49479166" visible="true" weight="0.21295546" />
+      <window_info id="Structure" order="1" sideWeight="0.5052083" side_tool="true" weight="0.2769231" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -658,7 +678,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.052083332" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.052083332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -691,154 +711,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="security,errorhandler,logout,summary" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/SummaryController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/statistics_page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/LogoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/ErrorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Bacon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BBQSauce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/TomatoSauce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/SmokedChicken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Pepperoni.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Oregano.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Mozzarella.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Jalapeno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Corregio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/CarmelOnion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BeefCarpaccio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar!/javax/persistence/OneToMany.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/add_or_update_order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="94" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/HotRoadPizza.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -873,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.8.Final/hibernate-core-5.4.8.Final.jar!/org/hibernate/engine/transaction/internal/TransactionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -901,34 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.1.RELEASE/spring-data-jpa-2.2.1.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItemType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -956,44 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/orders_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="70" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1004,58 +807,323 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_menu_item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
+        <state relative-caret-position="66">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_menu_item.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/ItemType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" selection-start-line="25" selection-start-column="4" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/authority/SimpleGrantedAuthority.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/UserDetailsService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-start-column="2" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar!/org/springframework/data/domain/PageRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar!/org/springframework/data/domain/Pageable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar!/org/springframework/data/domain/AbstractPageRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepositoryUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="44" column="100" selection-start-line="44" selection-start-column="100" selection-end-line="44" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/OrdersConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="126" column="37" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/RestaurantOrderConfigurationProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+        <state relative-caret-position="92">
+          <caret line="48" column="97" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configprops.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/DesignTacoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItemsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="69" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="38" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add_or_update_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/orders_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package com.example.restaurantapplication.repository.RestaurantOrderItems.pizzas;
+package com.example.restaurantapplication.repository.RestaurantOrderItems;
 
 import org.springframework.stereotype.Component;
 
@@ -34,9 +34,9 @@ public class MenuItemsFactory {
     }
 
     public MenuItem getGreekSalad() {
-        return new MenuItem("GRKS", "GREEK SALAD", "" +
+        return new MenuItem("GRKS", "GREEK SALAD",
                 "vine tomatoes, cucumber, red onion, kalamata olives, dried oregano, feta cheese,Greek extra virgin olive oil",
-                ItemType.SALAD, 300.0d);
+                ItemType.SALAD, 15.0d);
     }
 
     public MenuItem getCocaCola() {
@@ -63,7 +63,6 @@ public class MenuItemsFactory {
         } else {
             return new MenuItem(getEmptyMenuItem());
         }
-
     }
 
 }
