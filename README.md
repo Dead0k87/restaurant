@@ -18,5 +18,5 @@ Order management interface for service staff. It allows to make orders, calculat
 * Status on orders (payed/not payed)
 
 ![Alt text](/screenshots/1.PNG?raw=true)
-![Alt text](/screenshots/1.PNG?raw=true)
-![Alt text](/screenshots/1.PNG?raw=true)
+![Alt text](/screenshots/2.PNG?raw=true)
+![Alt text](/screenshots/3.PNG?raw=true)
