@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="restaurant" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="558b685a-f576-452d-a679-23c6730d35e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/RestaurantOrderConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/RegistrationForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepositoryUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/configprops.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/PizzaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/AddUpdateMenuItemControllerExperimental.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/MenuItemsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/ItemType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/MenuItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItemsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BBQSauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/BBQSauce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Bacon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Bacon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/BeefCarpaccio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/BeefCarpaccio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/CarmelOnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/CarmelOnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Corregio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Corregio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Jalapeno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Jalapeno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Mozzarella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Mozzarella.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Oregano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Oregano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/Pepperoni.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/Pepperoni.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/SmokedChicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/SmokedChicken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/pizzacomponents/TomatoSauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzacomponents/TomatoSauce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/services/RestaurantServiceJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/restaurantapplication/repository/MenuItemRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/restaurant-application.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/restaurant-application.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,9 +25,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1462">
+              <caret line="86" column="21" selection-start-line="83" selection-start-column="7" selection-end-line="86" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="1938">
               <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,10 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="136">
               <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
                 <element signature="e#328#329#0" expanded="true" />
               </folding>
             </state>
@@ -95,16 +89,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/orders_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="697">
               <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
             </state>
           </provider>
@@ -172,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/UserRepositoryUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/OrderRepository.java" />
@@ -191,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/orders_list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
       </list>
     </option>
   </component>
@@ -200,6 +194,22 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="restaurant-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="restaurant-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
@@ -213,7 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,67 +241,6 @@
               <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="RestaurantOrderItems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
@@ -317,45 +266,11 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restaurant-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurantapplication" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restaurant-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,13 +281,16 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575495964308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575500035892" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
@@ -567,7 +485,11 @@
       <workItem from="1575313808652" duration="598000" />
       <workItem from="1575320162484" duration="3325000" />
       <workItem from="1575399007572" duration="11358000" />
-      <workItem from="1575485091391" duration="5559000" />
+      <workItem from="1575485091391" duration="8864000" />
+      <workItem from="1575572203641" duration="72000" />
+      <workItem from="1575575201757" duration="721000" />
+      <workItem from="1575613036045" duration="20000" />
+      <workItem from="1575924677983" duration="261000" />
     </task>
     <task id="LOCAL-00001" summary="security,errorhandler,logout,summary">
       <created>1574286894208</created>
@@ -625,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575205054812</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="security,errorhandler,logout,summary">
+      <created>1575496072961</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575496072962</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -661,13 +590,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169374000" />
+    <option name="totallyTimeSpent" value="173753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49479166" visible="true" weight="0.21295546" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49479166" visible="true" weight="0.22348177" />
       <window_info id="Structure" order="1" sideWeight="0.5052083" side_tool="true" weight="0.2769231" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -677,7 +606,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.052083332" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30381945" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.052083332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -686,7 +615,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.052083332" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.060763888" />
       <window_info anchor="bottom" id="Problems" order="12" weight="0.3298611" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
@@ -694,7 +623,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32955465" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -711,13 +640,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="security,errorhandler,logout,summary" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/BBQPizza.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/RestaurantOrderItem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/pizzas/ItalianPizza.java" />
@@ -901,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/security/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -991,23 +906,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/OrdersConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="126" column="37" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/OrdersConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/configuration/RestaurantOrderConfigurationProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1035,18 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/DesignTacoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/DesignTacoController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/repository/RestaurantOrderItems/MenuItemsFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -1085,13 +973,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="21" selection-start-line="83" selection-start-column="7" selection-end-line="86" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1103,36 +1004,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/RootController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="136">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/restaurantapplication/controllers/OrdersController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/orders_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="697">
           <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>restaurant</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>restaurant-application</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
